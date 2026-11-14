@@ -5,198 +5,191 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zad · Privacy policy | زاد · سياسة الخصوصية</title>
 <meta name="description" content="Privacy policy of the Zad app. سياسة الخصوصية لتطبيق زاد.">
+<meta name="color-scheme" content="light dark">
 <style>
-  :root { color-scheme: light dark; --bg: #f3efe5; --card: #fffdf8; --text: #1c1b18; --muted: #5f5b50; --accent: #143c2e; --line: #e6dfd0; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #141815; --card: #1d2320; --text: #ece8dd; --muted: #a8a496; --accent: #8fd0b1; --line: #2e3631; } }
+  :root { --bg: #f6f2fb; --card: #fffdf9; --text: #1c1a15; --muted: #5d566b; --violet: #5b48b0; --violet-soft: #ece7fa;
+          --gold: #b08a3a; --gold-soft: #f3e4be; --line: #e4ddef; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #15121f; --card: #1e1a2b; --text: #eeeaf6; --muted: #aaa3bd; --violet: #a99be8; --violet-soft: #2a2442;
+            --gold: #e3b969; --gold-soft: #2e2716; --line: #332c49; }
+  }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.75 system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif; }
-  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
-  nav { display: flex; gap: 12px; justify-content: center; padding-bottom: 8px; }
-  nav a { color: var(--accent); font-weight: 600; }
-  article { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 8px 24px 24px; margin-top: 16px; }
-  h1 { font-size: 1.6rem; line-height: 1.3; margin: 20px 0 4px; color: var(--accent); }
-  h2 { font-size: 1.1rem; margin: 26px 0 4px; }
-  p, li { color: var(--text); }
-  .date { color: var(--muted); margin-top: 0; font-size: .9rem; }
-  .promise { border-inline-start: 4px solid var(--accent); padding: 4px 14px; font-weight: 600; margin: 18px 0; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 17px/1.8 system-ui, -apple-system, "Segoe UI", Tahoma, "Noto Naskh Arabic", sans-serif; }
+  header { background: linear-gradient(135deg, #3d2f80, #5b48b0 60%, #6f5cc7); color: #fff; text-align: center;
+           padding: 28px 16px 22px; border-bottom: 3px solid #c9a24a; }
+  .mark { font-size: 2.1rem; font-weight: 700; letter-spacing: .02em; color: #f3e4be; margin: 0; }
+  .tag { margin: 2px 0 14px; opacity: .9; font-size: .95rem; }
+  nav { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  nav a { color: #1a1408; background: #ddbb74; text-decoration: none; font-weight: 600; padding: 6px 18px; border-radius: 999px; }
+  nav a:focus-visible, nav a:hover { background: #f3e4be; }
+  main { max-width: 780px; margin: 0 auto; padding: 8px 16px 64px; }
+  article { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 6px 24px 24px; margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(61, 47, 128, .06); }
+  h1 { font-size: 1.55rem; line-height: 1.35; margin: 20px 0 2px; color: var(--violet); }
+  h2 { font-size: 1.08rem; margin: 26px 0 6px; display: flex; align-items: center; gap: 10px; }
+  .n { flex: none; display: inline-grid; place-items: center; width: 1.9em; height: 1.9em; border-radius: 50%;
+        background: var(--gold-soft); color: var(--gold); border: 1px solid var(--gold); font-size: .85rem; }
+  p, li { margin: 6px 0; }
   ul { padding-inline-start: 22px; margin: 6px 0; }
-  a { color: var(--accent); overflow-wrap: anywhere; }
+  li::marker { color: var(--gold); }
+  .date { color: var(--muted); margin-top: 0; font-size: .9rem; }
+  .brief { background: var(--violet-soft); border-inline-start: 4px solid var(--gold); border-radius: 12px; padding: 10px 16px; margin: 16px 0 6px; }
+  .brief strong { color: var(--violet); }
+  a { color: var(--violet); overflow-wrap: anywhere; }
+  footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 0 16px 32px; }
+  @media (max-width: 480px) { body { font-size: 16px; } article { padding: 4px 16px 18px; border-radius: 16px; } h1 { font-size: 1.35rem; } }
 </style>
 </head>
 <body>
+<header>
+  <p class="mark">زاد · Zad</p>
+  <p class="tag">سياسة الخصوصية · Privacy policy</p>
+  <nav>
+    <a href="#ar" lang="ar">العربية</a>
+    <a href="#en" lang="en">English</a>
+  </nav>
+</header>
 <main>
-<nav>
-  <a href="#ar" lang="ar">العربية</a>
-  <a href="#en" lang="en">English</a>
-</nav>
-
 <article id="ar" lang="ar" dir="rtl">
   <h1>سياسة الخصوصية لتطبيق «زاد»</h1>
-  <p class="date">آخر تحديث: 31 أكتوبر 2026</p>
-  <p class="promise">لا يجمع زاد أي بيانات، ولا يرسل شيئًا من جهازك تلقائيًا. الاستثناء الوحيد: بلاغ عن إجابة من المساعد ترسله أنت بنفسك بعد أن ترى محتواه.</p>
-
-  <h2>من نحن</h2>
-  <p>«زاد» تطبيق إسلامي مجاني وغير ربحي، ينشره المطوّر <strong>vexmaher</strong>، وهو المسؤول عن معالجة البيانات. للتواصل: <a href="mailto:vexmaher@proton.me">vexmaher@proton.me</a>.</p>
-
-  <h2>ما يبقى على جهازك</h2>
-  <p>لا يحتاج التطبيق إلى حساب، وليس فيه إعلانات ولا تحليلات ولا تقارير أعطال ولا مكتبات تتبّع، ولا يستعمل خدمات Google Play، ولا نشغّل خادمًا يستقبل بيانات منه. يحفظ على هاتفك فقط ما يلزم لعمله:</p>
-  <ul>
-    <li>الإعدادات: اللغة والمظهر، والمدينة وطريقة الحساب، والأذان والتذكيرات.</li>
-    <li>نشاطك: موضع القراءة والمفضلة، والختمات، والحفظ، وسجل الصيام، والتسبيح وأدعيتك، وسجل الاستماع والتنزيلات.</li>
-    <li>التأملات التي تكتبها.</li>
-  </ul>
-  <p>تحذف كل ذلك بإلغاء تثبيت التطبيق أو مسح بياناته من إعدادات الهاتف.</p>
-
-  <h2>الموقع</h2>
-  <ul>
-    <li>يطلب التطبيق موقعًا تقريبيًا فقط، والإذن اختياري: يمكنك اختيار مدينتك يدويًا من قائمة تعمل بلا إنترنت.</li>
-    <li>إن سمحت، يُقرأ موقعك عندما تطلب ذلك، وقد يُقرأ عند فتح التطبيق لاقتراح تحديث مدينتك بعد السفر. لا يتتبّع التطبيق موقعك في الخلفية.</li>
-    <li>تُستعمل الإحداثيات على جهازك فقط لحساب مواقيت الصلاة والقبلة، ولا تُرسل إلى أحد.</li>
-  </ul>
-
-  <h2>الصلاحيات ولماذا</h2>
-  <ul>
-    <li>الإشعارات والمنبّهات الدقيقة: لرفع الأذان والتذكيرات في وقتها.</li>
-    <li>العمل بعد إعادة التشغيل: لإعادة جدولة الأذان.</li>
-    <li>إعدادات البطارية (اختياري): حتى لا يؤخر النظام الأذان.</li>
-    <li>وضع عدم الإزعاج (اختياري): لإسكات الهاتف وقت الصلاة إذا فعّلت ذلك.</li>
-    <li>البوصلة: تُستعمل في شاشة القبلة وحدها، ولا يُسجَّل منها شيء.</li>
-    <li>البصمة أو قفل الشاشة (اختياري): لقفل تأملاتك. يتولى Android التحقق، ولا يرى التطبيق بصمتك ولا رمزك.</li>
-    <li>الإنترنت: للاستماع والتنزيلات وبلاغ المساعد فقط.</li>
-    <li>الملفات: يفتح التطبيق فقط ملفًا تختاره أنت، مثل نسخة احتياطية.</li>
-  </ul>
-
-  <h2>النسخ الاحتياطي والمشاركة</h2>
-  <ul>
-    <li>النسخة اليدوية: ملف تنشئه وتحفظه حيث تشاء، ويمكن تشفيره بكلمة مرور. لا نحتفظ بكلمة المرور ولا نستطيع استرجاعها.</li>
-    <li>لا يرسل التطبيق بياناتك إلى النسخ الاحتياطي السحابي في Android. وعند نقل بياناتك مباشرة إلى هاتف جديد بأداة النقل في Android، تُنقل بين الهاتفين.</li>
-    <li>عند مشاركة آية أو صورة أو تصدير تأملاتك، يذهب المحتوى إلى التطبيق أو المكان الذي تختاره.</li>
-  </ul>
-
-  <h2>الإنترنت والخدمات الخارجية</h2>
-  <p>يعمل معظم التطبيق بلا إنترنت، ولا يتصل إلا عندما تطلب ذلك:</p>
-  <ul>
-    <li>الاستماع والتنزيل والإذاعات وتوقيت الآيات: من خوادم MP3Quran ومزوّدي بث الإذاعات.</li>
-    <li>الدروس: من الموقع الرسمي للشيخ عبد العزيز بن باز.</li>
-    <li>الترجمات الإضافية: من Tanzil.</li>
-    <li>ملف نموذج المساعد (اختياري): من Hugging Face أو الموقع البديل له، مرة واحدة.</li>
-  </ul>
-  <p>في كل اتصال يرى الخادم عنوان IP لجهازك والتفاصيل التقنية المعتادة لأي طلب، كما عند زيارة أي موقع، وتخضع هذه الخوادم لسياساتها. لا يرسل إليها التطبيق شيئًا عنك، وكل الاتصالات مشفرة (HTTPS).</p>
-
-  <h2>المساعد (تجريبي)</h2>
-  <p>معطّل افتراضيًا. بعد تنزيل النموذج يعمل كله على هاتفك. لا تُرسل أسئلتك إلى أي خادم، ولا تُحفظ المحادثة بعد إغلاقها، إلا ما تختار إرفاقه في بلاغ.</p>
-
-  <h2>بلاغ عن إجابة من المساعد (اختياري)</h2>
-  <ul>
-    <li>لا يُرسل البلاغ إلا عندما تضغط زر الإرسال، بعد أن ترى كامل ما سيُرسل.</li>
-    <li>يحتوي: نص الإجابة، وسبب البلاغ، وملاحظتك إن كتبتها، واسم النموذج، ورقم نسخة التطبيق، ولغة التطبيق.</li>
-    <li>سؤالك لا يُرفق إلا إذا فعّلت خانته بنفسك، وهي غير مفعّلة افتراضيًا. وقد تكرر الإجابة شيئًا من سؤالك، فراجعها في المعاينة.</li>
-    <li>لا يحتوي البلاغ على معرّف لجهازك ولا اسمك ولا موقعك.</li>
-    <li>يمر البلاغ عبر <strong>Google Forms</strong> التي تستضيفه لنا، وترى Google عنوان IP والتفاصيل التقنية المعتادة وفق <a href="https://policies.google.com/privacy">سياستها</a>، وقد تُعالَج البيانات خارج بلدك.</li>
-    <li>نستعمل البلاغات فقط لتحسين الإجابات ومعالجة المحتوى المسيء، ونحذفها بعد 12 شهرًا.</li>
-    <li>إن لم يتوفر الإنترنت أو فشل الإرسال، يعرض التطبيق إرسال البلاغ من تطبيق البريد لديك، وعندها يصلنا عنوان بريدك.</li>
-    <li>لحذف بلاغ أرسلته، راسلنا مع ذكر نصه، فالبلاغ لا يحمل ما يربطه بك.</li>
-  </ul>
-
-  <h2>إذا راسلتنا</h2>
-  <p>تفتح شاشة «تواصل معنا» تطبيق البريد لديك برسالة جاهزة، تنتهي برقم نسخة التطبيق وطراز الهاتف وإصدار Android لتراها قبل الإرسال. يصلنا ما ترسله مع عنوان بريدك، ولا نستعمله إلا للرد عليك.</p>
-
-  <h2>الأطفال</h2>
-  <p>التطبيق موجّه لمن هم في سن 13 فما فوق، ويمكن للأصغر استعماله مع والديهم. لا نجمع عمدًا بيانات عن الأطفال.</p>
-
-  <h2>حقوقك</h2>
-  <p>بياناتك على جهازك، فأنت تعدّلها وتنقلها وتحذفها مباشرة. وللبلاغات والرسائل التي تصلنا، لك حق الوصول إليها وتصحيحها وحذفها والاعتراض على معالجتها: راسلنا على <a href="mailto:vexmaher@proton.me">vexmaher@proton.me</a>. ويمكنك تقديم شكوى إلى هيئة حماية البيانات في بلدك.</p>
-
-  <h2>الأمان</h2>
-  <p>تُحفظ بياناتك في مساحة التطبيق الخاصة التي يحميها Android. يمكنك قفل تأملاتك وتشفير نسختك الاحتياطية، وننصحك بقفل هاتفك.</p>
-
-  <h2>تغيير هذه السياسة</h2>
-  <p>إذا تغيّر ما يفعله التطبيق بالبيانات، نحدّث هذه الصفحة وتاريخها، وننبهك داخل التطبيق عندما يكون التغيير مهمًا.</p>
+  <p class="date">آخر تحديث: ١٤ نوفمبر ٢٠٢٦</p>
+  <div class="brief"><strong>باختصار</strong><ul><li>لا يجمع زاد أي بيانات. لا يرسل التطبيق شيئًا من بياناتك بنفسه، إلا بلاغًا عن إجابة من المساعد ترسله أنت بعد أن ترى محتواه. وكذلك بلاغ عن مشكلة في التسميع، بالطريقة نفسها (البند ٩).</li><li>لا حساب ولا إعلانات ولا تتبّع ولا أدوات تحليل.</li><li>الموقع يُستعمل على الجهاز، والإنترنت لما تطلبه أنت، ولقائمة الملفات المتاحة للتنزيل.</li></ul></div>
+  <section>
+    <h2><span class="n">١</span>من نحن</h2>
+    <p>«زاد» تطبيق إسلامي مجاني وغير ربحي، ينشره المطوّر vexmaher، وهو المسؤول عن معالجة البيانات. للتواصل: <a href="mailto:vexmaher@proton.me">vexmaher@proton.me</a>.</p>
+  </section>
+  <section>
+    <h2><span class="n">٢</span>المبدأ: لا نجمع بياناتك</h2>
+    <p>لا يجمع زاد أي بيانات. لا يرسل التطبيق شيئًا من بياناتك بنفسه، إلا بلاغًا عن إجابة من المساعد ترسله أنت بعد أن ترى محتواه. وكذلك بلاغ عن مشكلة في التسميع، بالطريقة نفسها (البند ٩).</p>
+    <p>صُمّم «زاد» ليعمل على جهازك. لا يطلب حسابًا، ولا يحتوي على إعلانات، ولا أدوات تحليل، ولا تقارير أعطال، ولا أي مكتبة تتبّع، ولا يستعمل خدمات Google Play. ليس لدينا خادم يستقبل بيانات من التطبيق، فلا نرى شيئًا مما تفعله فيه.</p>
+  </section>
+  <section>
+    <h2><span class="n">٣</span>ما يُحفظ على جهازك</h2>
+    <p>يحفظ التطبيق على هاتفك فقط ما يلزمه ليعمل:</p>
+    <ul><li>الإعدادات: اللغة والمظهر والأرقام، والمدينة وطريقة الحساب وضبط المسجد، وإعدادات الأذان والتذكيرات ورمضان. وتاريخ أول تشغيل لكل إصدار والميزات الجديدة التي فتحتها، لتظهر شارة «جديد» يومًا ثم تختفي.</li><li>نشاطك: موضع القراءة والعلامات والمفضّلة، والختمات وأيام القراءة، ومقاطع الحفظ ومواعيد مراجعتها، وسجل الصيام والقضاء، والمسبحة وأدعيتك، وسجل الاستماع والتنزيلات. وعدد دقائق استعمالك التطبيق في كل يوم، ليُحسب تقدّمك اليومي (مجموع كل يوم فقط).</li><li>التأمّلات التي تكتبها.</li><li>محادثة المساعد، حتى تبدأ محادثة جديدة (البند ٨).</li></ul>
+    <p>لا تغادر هذه البيانات هاتفك إلا بالطرق المذكورة في البند ٦. تحذفها كلها بإزالة التطبيق أو بمسح بياناته من إعدادات الهاتف.</p>
+  </section>
+  <section>
+    <h2><span class="n">٤</span>الموقع</h2>
+    <ul><li>يطلب التطبيق إذن الموقع التقريبي فقط، والإذن اختياري: يمكنك اختيار مدينتك يدويًا من قائمة مدمجة تعمل بلا إنترنت.</li><li>إن أذنت، يُقرأ موقعك حين تطلب تحديده، وقد يُقرأ عند فتح التطبيق ليقترح عليك تحديث المدينة إذا سافرت.</li><li>تُستعمل الإحداثيات على الجهاز لحساب مواقيت الصلاة واتجاه القبلة، ولمعرفة بلدك من قائمة المدن المدمجة. ولا يرسلها التطبيق إلى أحد.</li><li>لا يتتبّع التطبيق موقعك في الخلفية.</li></ul>
+  </section>
+  <section>
+    <h2><span class="n">٥</span>الأذونات الأخرى وسببها</h2>
+    <ul><li>الإشعارات والمنبّهات الدقيقة: لرفع الأذان والتذكيرات في وقتها.</li><li>العمل بعد إعادة تشغيل الهاتف: لإعادة جدولة الأذان.</li><li>إعدادات البطارية (اختياري): يدلّك التطبيق على صفحتها في إعدادات هاتفك كي لا يؤخّر النظام الأذان، ولا يطلب هذا الإذن بنفسه.</li><li>الوصول إلى «عدم الإزعاج» (اختياري): لإسكات الهاتف وقت الصلاة إن فعّلت ذلك.</li><li>الاهتزاز: لاهتزاز اللمس في المسبحة وعدّاد الأذكار، وللتنبيهات، ويمكنك إيقافه من الإعدادات.</li><li>البوصلة: تُستعمل في شاشة القبلة وحدها، ولا يُسجَّل منها شيء.</li><li>البصمة أو قفل الشاشة (اختياري): لقفل التأمّلات. نظام Android هو الذي يتحقق، ولا يصل التطبيق إلى بصمتك ولا إلى رمزك.</li><li>الميكروفون (اختياري): للتسميع وللبحث في القرآن بالصوت. يُعالَج الصوت على هاتفك وحده بنموذج مُنزَّل، ولا يُحفظ التسجيل ولا يغادر الجهاز.</li><li>الإنترنت: للاستماع والتنزيل وبلاغ المساعد، ولقائمة الملفات المتاحة للتنزيل (البندان ٧ و٩). ومعرفة حالة الاتصال، ليعرض إرسال البلاغ بالبريد إن لم يتوفر الإنترنت.</li><li>الملفات: لا يفتح التطبيق إلا ملفًا تختاره أنت، مثل ملف نسخة احتياطية. وعلى Android 8 و9 وحدهما يطلب إذن التخزين لحفظ صورة تشاركها في معرض الصور.</li></ul>
+  </section>
+  <section>
+    <h2><span class="n">٦</span>النسخ الاحتياطي والمشاركة</h2>
+    <ul><li>النسخة الاحتياطية اليدوية: ملف تنشئه أنت وتختار مكانه، ويمكنك تشفيره بكلمة مرور (AES-256). لا نحتفظ بكلمة المرور ولا نستطيع استرجاعها.</li><li>لا يرسل التطبيق بياناتك إلى النسخ الاحتياطي السحابي في Android. وعند نقل بياناتك مباشرة إلى هاتف جديد بأداة النقل في Android، تنتقل بين الهاتفين.</li><li>المشاركة والتصدير: حين تشارك آية أو صورة أو تصدّر تأمّلاتك، يذهب المحتوى عبر التطبيق أو المكان الذي تختاره أنت.</li></ul>
+  </section>
+  <section>
+    <h2><span class="n">٧</span>الإنترنت وخدمات الآخرين</h2>
+    <p>يعمل معظم التطبيق دون إنترنت. يتصل حين تطلب:</p>
+    <ul><li>الاستماع إلى التلاوات والإذاعات وتنزيلها، وتوقيت الآيات في التلاوة: من خوادم MP3Quran ومزوّدي بث الإذاعات.</li><li>المحاضرات والدروس: من الموقع الرسمي للشيخ عبد العزيز بن باز، ومن إصدارات GitHub التي ننشر فيها دروس المشايخ.</li><li>الترجمات الإضافية: من موقع Tanzil.</li><li>سماع نطق كلمات القرآن: من ملفات الصوت كلمةً كلمة في Quran.com، وتُحفظ كل كلمة سمعتها على هاتفك أسبوعًا على الأكثر ثم تُحذف.</li><li>كتب المكتبة، وخطوط المصحف وبياناته، ونماذج التسميع: من إصدارات GitHub التي ننشرها.</li><li>ملف نموذج المساعد (اختياري): يُنزَّل مرة واحدة من Hugging Face أو مرآته hf-mirror.com، ثم يعمل دون إنترنت (البند ٨).</li></ul>
+    <p>ويتصل التطبيق بنفسه في حالة واحدة: عند فتحه يجلب من GitHub قائمة الملفات المتاحة للتنزيل (ملف assets.json)، مرة كل مدة على الأكثر، دون أن يرسل أي معلومة عنك. يحدث ذلك مرة كل ست ساعات على الأكثر، ويجلب مع القائمة ملف توقيعها (assets.json.sig) ليتحقق أنها منّا.</p>
+    <p>في كل اتصال يرى الخادم عنوان IP لجهازك والمعلومات التقنية المعتادة لأي طلب، كما يحدث عند زيارة أي موقع. لا يرسل التطبيق إليه أي معلومة عنك، وتخضع هذه الخوادم لسياساتها الخاصة. وكل الاتصالات مشفّرة (HTTPS).</p>
+  </section>
+  <section>
+    <h2><span class="n">٨</span>المساعد الذكي (تجريبي)</h2>
+    <p>معطّل افتراضيًا. حين تفعّله يجيب من المصادر وحدها: يبحث في نصوص التطبيق على هاتفك ويعرض الآيات والأحاديث بنصّها. وكتابة الإجابة بنموذج لغوي ميزة تجريبية تختارها أنت، تحتاج تنزيل ملف النموذج مرة واحدة، وهذا التنزيل لا يحمل أي سؤال ولا أي معلومة عنك.</p>
+    <p>كل ذلك يعمل على هاتفك: لا تُرسل أسئلتك إلى أي خادم. تُحفظ المحادثة في المساحة الخاصة بالتطبيق على هاتفك ليبقى ما كتبته حين تعود، ولا تدخل في النسخ الاحتياطي، وتحذفها «محادثة جديدة» أو مسح بيانات التطبيق. لا يخرج منها شيء إلا ما تختار إرفاقه في بلاغ (البند ٩).</p>
+  </section>
+  <section>
+    <h2><span class="n">٩</span>بلاغ عن إجابة من المساعد (اختياري)</h2>
+    <ul><li>لا يُرسل البلاغ إلا عندما تضغط زر الإرسال، بعد أن ترى كامل ما سيُرسل.</li><li>يحتوي: نص الإجابة، وسبب البلاغ، وملاحظتك إن كتبتها، واسم النموذج، ورقم نسخة التطبيق، ولغة التطبيق.</li><li>سؤالك لا يُرفق إلا إذا فعّلت خانته بنفسك، وهي غير مفعّلة افتراضيًا. وقد تكرر الإجابة شيئًا من سؤالك، فراجعها في المعاينة.</li><li>لا يحتوي البلاغ على معرّف لجهازك ولا اسمك ولا موقعك.</li><li>يمر البلاغ عبر Google Forms التي تستضيفه لنا، وترى Google عنوان IP والمعلومات التقنية المعتادة وفق سياستها، وقد تُعالَج البيانات خارج بلدك.</li><li>نستعمل البلاغات فقط لتحسين الإجابات ومعالجة المحتوى المسيء، ونحذفها بعد ١٢ شهرًا.</li><li>إن لم يتوفر الإنترنت أو فشل الإرسال، يعرض التطبيق إرسال البلاغ من تطبيق البريد لديك، وعندها يصلنا عنوان بريدك.</li><li>لحذف بلاغ أرسلته، راسلنا مع ذكر نصه، فالبلاغ لا يحمل ما يربطه بك.</li><li>بلاغ عن مشكلة في التسميع يعمل بالطريقة نفسها: لا يُرسل إلا بزر الإرسال بعد أن ترى كامل ما سيُرسل، ويحتوي نوع المشكلة واسم السورة ورقم الآية والكلمات التي علّمها التسميع وملاحظتك إن كتبتها واسم النموذج ورقم نسخة التطبيق. لا يُرسل صوتك ولا أي تسجيل منه.</li></ul>
+  </section>
+  <section>
+    <h2><span class="n">١٠</span>إذا راسلتنا</h2>
+    <p>تفتح شاشة «تواصل معنا» تطبيق البريد لديك برسالة جاهزة، تنتهي برقم نسخة التطبيق وطراز الهاتف وإصدار Android لتراها قبل الإرسال. يصلنا ما ترسله مع عنوان بريدك، ولا نستعمله إلا للرد عليك.</p>
+  </section>
+  <section>
+    <h2><span class="n">١١</span>الأطفال</h2>
+    <p>التطبيق موجّه لمن عمره ١٣ سنة فأكثر، ويمكن للأصغر استعماله مع أهلهم. لا نجمع عمدًا بيانات عن الأطفال.</p>
+  </section>
+  <section>
+    <h2><span class="n">١٢</span>حقوقك</h2>
+    <p>بياناتك على جهازك، فأنت تعدّلها في التطبيق، وتنقلها بالنسخة الاحتياطية، وتحذفها بمسح بيانات التطبيق. وللبلاغات والرسائل التي تصلنا، لك حق الوصول إليها وتصحيحها وحذفها والاعتراض على معالجتها: راسلنا على <a href="mailto:vexmaher@proton.me">vexmaher@proton.me</a>. ويحق لك تقديم شكوى إلى هيئة حماية البيانات في بلدك.</p>
+  </section>
+  <section>
+    <h2><span class="n">١٣</span>الأمان</h2>
+    <p>تُحفظ بياناتك في المساحة الخاصة بالتطبيق التي يحميها نظام Android. يمكنك قفل التأمّلات وتشفير النسخة الاحتياطية، وننصحك بقفل هاتفك.</p>
+  </section>
+  <section>
+    <h2><span class="n">١٤</span>تعديل هذه السياسة</h2>
+    <p>إن تغيّر ما يفعله التطبيق بالبيانات، نحدّث هذه السياسة وتاريخها في أعلاها، ونُعلمك داخل التطبيق إن كان التغيير جوهريًا.</p>
+  </section>
 </article>
 
 <article id="en" lang="en" dir="ltr">
   <h1>Zad privacy policy</h1>
-  <p class="date">Last updated: 31 October 2026</p>
-  <p class="promise">Zad collects no data and sends nothing from your device automatically. The only exception: a report about an assistant answer, which you send yourself after seeing its content.</p>
-
-  <h2>Who we are</h2>
-  <p>Zad is a free, non-profit Islamic app published by the developer <strong>vexmaher</strong>, who is responsible for data processing. Contact: <a href="mailto:vexmaher@proton.me">vexmaher@proton.me</a>.</p>
-
-  <h2>What stays on your device</h2>
-  <p>The app needs no account and contains no ads, analytics, crash reporting or tracking libraries, and does not use Google Play services. We run no server that receives data from it. It keeps on your phone only what it needs to work:</p>
-  <ul>
-    <li>Settings: language and appearance, city and calculation method, adhan and reminders.</li>
-    <li>Your activity: reading position and favorites, khatmas, memorization, fasting log, tasbih and your own du'as, listening history and downloads.</li>
-    <li>Reflections you write.</li>
-  </ul>
-  <p>You delete all of it by uninstalling the app or clearing its data in your phone settings.</p>
-
-  <h2>Location</h2>
-  <ul>
-    <li>The app asks only for approximate location, and the permission is optional: you can pick your city by hand from a list that works offline.</li>
-    <li>If you allow it, your location is read when you ask, and may be read when you open the app to suggest updating your city after travel. The app does not track your location in the background.</li>
-    <li>Coordinates are used on your device only, to calculate prayer times and the qibla, and are never sent to anyone.</li>
-  </ul>
-
-  <h2>Permissions and why</h2>
-  <ul>
-    <li>Notifications and exact alarms: to sound the adhan and reminders on time.</li>
-    <li>Running after a restart: to reschedule the adhan.</li>
-    <li>Battery settings (optional): so the system does not delay the adhan.</li>
-    <li>Do Not Disturb access (optional): to silence the phone at prayer time, if you turn this on.</li>
-    <li>Compass: used on the qibla screen only. Nothing is recorded.</li>
-    <li>Fingerprint or screen lock (optional): to lock your reflections. Android performs the check; the app never sees your fingerprint or PIN.</li>
-    <li>Internet: for listening, downloads and assistant reports only.</li>
-    <li>Files: the app opens only a file you choose, such as a backup.</li>
-  </ul>
-
-  <h2>Backup and sharing</h2>
-  <ul>
-    <li>Manual backup: a file you create and save where you choose, optionally encrypted with a password. We do not keep the password and cannot recover it.</li>
-    <li>The app does not send your data to Android's cloud backup. If you move to a new phone with Android's transfer tool, your data goes directly between the two phones.</li>
-    <li>When you share a verse or an image, or export your reflections, the content goes to the app or place you choose.</li>
-  </ul>
-
-  <h2>Internet and third-party services</h2>
-  <p>Most of the app works offline. It connects only when you ask:</p>
-  <ul>
-    <li>Listening, downloads, radio and verse timings: from MP3Quran servers and radio stream providers.</li>
-    <li>Lectures: from the official website of Sheikh Abdulaziz ibn Baz.</li>
-    <li>Additional translations: from Tanzil.</li>
-    <li>The assistant's model file (optional): once, from Hugging Face or its mirror.</li>
-  </ul>
-  <p>With each connection, the server sees your device's IP address and the usual technical details of any request, as when you visit any website; these servers follow their own policies. The app sends them nothing about you, and all connections are encrypted (HTTPS).</p>
-
-  <h2>The assistant (experimental)</h2>
-  <p>Off by default. Once the model is downloaded, it runs entirely on your phone. Your questions are not sent to any server and the conversation is not kept after you close it, except what you choose to attach to a report.</p>
-
-  <h2>Reporting an assistant answer (optional)</h2>
-  <ul>
-    <li>A report is sent only when you press send, after you have seen everything it contains.</li>
-    <li>It contains: the answer's text, the reason, your note if you write one, the model's name, the app's version and the app's language.</li>
-    <li>Your question is attached only if you turn its option on; it is off by default. An answer may repeat part of your question, so check it in the preview.</li>
-    <li>A report contains no device identifier, no name and no location.</li>
-    <li>Reports go through <strong>Google Forms</strong>, which hosts them for us. Google sees the IP address and usual technical details under <a href="https://policies.google.com/privacy">its policy</a>, and the data may be processed outside your country.</li>
-    <li>We use reports only to improve answers and deal with offensive content, and delete them after 12 months.</li>
-    <li>Without internet, or if sending fails, the app offers to send the report from your mail app; we then receive your email address.</li>
-    <li>To delete a report you sent, write to us quoting its text, as nothing in a report links it to you.</li>
-  </ul>
-
-  <h2>If you write to us</h2>
-  <p>The contact screen opens your mail app with a message ready, ending with the app's version, the phone's model and the Android version, so you see them before sending. We receive what you send with your email address, and use it only to reply.</p>
-
-  <h2>Children</h2>
-  <p>The app is intended for users aged 13 and over; younger children may use it with their parents. We do not knowingly collect data about children.</p>
-
-  <h2>Your rights</h2>
-  <p>Your data is on your device, so you edit, move and delete it directly. For reports and messages we receive, you have the right to access, correct and delete them and to object to their processing: write to <a href="mailto:vexmaher@proton.me">vexmaher@proton.me</a>. You may also complain to your data protection authority.</p>
-
-  <h2>Security</h2>
-  <p>Your data is kept in the app's private storage, protected by Android. You can lock your reflections and encrypt your backup, and we recommend locking your phone.</p>
-
-  <h2>Changes to this policy</h2>
-  <p>If what the app does with data changes, we update this page and its date, and tell you in the app when the change is significant.</p>
+  <p class="date">Last updated: 14 November 2026</p>
+  <div class="brief"><strong>In short</strong><ul><li>Zad collects no data. The app sends nothing of your data by itself, except a report about an assistant answer, which you send yourself after seeing its content. The same goes for a report about a recitation problem (section 9).</li><li>No account, no ads, no tracking, no analytics.</li><li>Location is used on the device; the internet for what you ask for, and for the list of files available to download.</li></ul></div>
+  <section>
+    <h2><span class="n">1</span>Who we are</h2>
+    <p>Zad is a free, non-profit Islamic app published by the developer vexmaher, who is responsible for data processing. Contact: <a href="mailto:vexmaher@proton.me">vexmaher@proton.me</a>.</p>
+  </section>
+  <section>
+    <h2><span class="n">2</span>Our principle: we don't collect your data</h2>
+    <p>Zad collects no data. The app sends nothing of your data by itself, except a report about an assistant answer, which you send yourself after seeing its content. The same goes for a report about a recitation problem (section 9).</p>
+    <p>Zad is built to run on your device. It needs no account and contains no ads, no analytics, no crash reporting and no tracking library, and it does not use Google Play services. We run no server that receives data from the app, so we see nothing of what you do in it.</p>
+  </section>
+  <section>
+    <h2><span class="n">3</span>What is stored on your device</h2>
+    <p>The app keeps on your phone only what it needs to work:</p>
+    <ul><li>Settings: language, appearance and numerals; city, calculation method and mosque adjustments; adhan, reminder and Ramadan settings. And the date each version first ran and the new features you have opened, so a «new» badge shows for a day and then goes.</li><li>Your activity: reading position, bookmarks and favorites; khatmas and reading days; memorization passages and their review dates; fasting and make-up log; tasbih and your own du'as; listening history and downloads. And the minutes you use the app each day, to count your daily progress (only each day's total).</li><li>Reflections you write.</li><li>The assistant conversation, until you start a new one (section 8).</li></ul>
+    <p>This data leaves your phone only in the ways described in section 6. You delete all of it by uninstalling the app or clearing its data in your phone settings.</p>
+  </section>
+  <section>
+    <h2><span class="n">4</span>Location</h2>
+    <ul><li>The app asks only for approximate location, and the permission is optional: you can pick your city by hand from a built-in list that works offline.</li><li>If you allow it, your location is read when you ask for it, and may be read when you open the app to suggest updating your city after travel.</li><li>Coordinates are used on the device to calculate prayer times and the qibla direction, and to find your country in the built-in list of cities. The app sends them to no one.</li><li>The app does not track your location in the background.</li></ul>
+  </section>
+  <section>
+    <h2><span class="n">5</span>Other permissions and why</h2>
+    <ul><li>Notifications and exact alarms: to sound the adhan and reminders on time.</li><li>Running after a restart: to reschedule the adhan.</li><li>Battery settings (optional): the app points you to their page in your phone's settings so the system does not delay the adhan; it does not request this permission itself.</li><li>Do Not Disturb access (optional): to silence the phone at prayer time, if you turn this on.</li><li>Vibration: for touch vibration in the tasbih and the adhkar counter, and for alerts; you can turn it off in the settings.</li><li>Compass: used on the qibla screen only. Nothing is recorded.</li><li>Fingerprint or screen lock (optional): to lock your reflections. Android performs the check; the app never sees your fingerprint or PIN.</li><li>Microphone (optional): for recitation and searching the Quran by voice. The sound is processed on your phone alone by a downloaded model; the recording is not kept and never leaves the device.</li><li>Internet: for listening, downloads and assistant reports, and for the list of files available to download (sections 7 and 9). And to know whether you are connected, so it can offer to send a report by email when you are offline.</li><li>Files: the app opens only a file you choose, such as a backup file. On Android 8 and 9 only, it asks for storage access to save an image you share to your gallery.</li></ul>
+  </section>
+  <section>
+    <h2><span class="n">6</span>Backup and sharing</h2>
+    <ul><li>Manual backup: a file you create and save where you choose, optionally encrypted with a password (AES-256). We do not keep the password and cannot recover it.</li><li>The app does not send your data to Android's cloud backup. If you move to a new phone with Android's transfer tool, your data goes directly between the two phones.</li><li>Sharing and export: when you share a verse or an image, or export your reflections, the content goes through the app or place you choose.</li></ul>
+  </section>
+  <section>
+    <h2><span class="n">7</span>Internet and third-party services</h2>
+    <p>Most of the app works offline. It connects when you ask:</p>
+    <ul><li>Listening to and downloading recitations and radio, and the verse timings of a recitation: from MP3Quran servers and radio stream providers.</li><li>Lectures and lessons: from the official website of Sheikh Abdulaziz ibn Baz, and from the GitHub releases where we publish the scholars' lessons.</li><li>Additional translations: from Tanzil.</li><li>Hearing the Quran's words pronounced: from Quran.com's word-by-word audio; each word you hear is kept on your phone for a week at most, then deleted.</li><li>The library's books, the Mushaf's fonts and data, and the recitation models: from the GitHub releases we publish.</li><li>The assistant's model file (optional): downloaded once from Hugging Face or its mirror hf-mirror.com, then used offline (section 8).</li></ul>
+    <p>The app connects by itself in one case: when opened, it fetches from GitHub the list of files available to download (assets.json), at most once a period, sending nothing about you. This happens at most once every six hours, and with the list it fetches its signature file (assets.json.sig) to check that the list comes from us.</p>
+    <p>With each connection, the server sees your device's IP address and the usual technical details of any request, as when you visit any website. The app sends it nothing about you, and these servers follow their own policies. All connections are encrypted (HTTPS).</p>
+  </section>
+  <section>
+    <h2><span class="n">8</span>The assistant (experimental)</h2>
+    <p>Off by default. Once you turn it on, it answers with the sources alone: it searches the app's texts on your phone and shows the verses and hadiths word for word. Having a language model write the answer is an experimental feature you choose; it needs the model file downloaded once, and that download carries no question and nothing about you.</p>
+    <p>All of it runs on your phone: your questions are sent to no server. The conversation is kept in the app's private storage on your phone so it is there when you come back; it is not part of backups, and «New conversation» or clearing the app's data deletes it. Nothing of it leaves the phone except what you choose to attach to a report (section 9).</p>
+  </section>
+  <section>
+    <h2><span class="n">9</span>Reporting an assistant answer (optional)</h2>
+    <ul><li>A report is sent only when you press send, after you have seen everything it contains.</li><li>It contains: the answer's text, the reason, your note if you write one, the model's name, the app's version and the app's language.</li><li>Your question is attached only if you turn its option on; it is off by default. An answer may repeat part of your question, so check it in the preview.</li><li>A report contains no device identifier, no name and no location.</li><li>Reports go through Google Forms, which hosts them for us. Google sees the IP address and usual technical details under its policy, and the data may be processed outside your country.</li><li>We use reports only to improve answers and deal with offensive content, and delete them after 12 months.</li><li>Without internet, or if sending fails, the app offers to send the report from your mail app; we then receive your email address.</li><li>To delete a report you sent, write to us quoting its text, as nothing in a report links it to you.</li><li>A report about a recitation problem works the same way: it is sent only with the send button, after you see all of it, and holds the kind of problem, the surah and verse number, the words the recitation marked, your note if you wrote one, the model's name and the app's version. Your voice, or any recording of it, is never sent.</li></ul>
+  </section>
+  <section>
+    <h2><span class="n">10</span>If you write to us</h2>
+    <p>The contact screen opens your mail app with a message ready, ending with the app's version, the phone's model and the Android version, so you see them before sending. We receive what you send with your email address, and use it only to reply.</p>
+  </section>
+  <section>
+    <h2><span class="n">11</span>Children</h2>
+    <p>The app is intended for users aged 13 and over; younger children may use it with their parents. We do not knowingly collect data about children.</p>
+  </section>
+  <section>
+    <h2><span class="n">12</span>Your rights</h2>
+    <p>Your data is on your device, so you edit it in the app, move it with a backup, and delete it by clearing the app's data. For reports and messages we receive, you have the right to access, correct and delete them and to object to their processing: write to <a href="mailto:vexmaher@proton.me">vexmaher@proton.me</a>. You may also complain to your data protection authority.</p>
+  </section>
+  <section>
+    <h2><span class="n">13</span>Security</h2>
+    <p>Your data is kept in the app's private storage, protected by Android. You can lock your reflections and encrypt your backup, and we recommend locking your phone.</p>
+  </section>
+  <section>
+    <h2><span class="n">14</span>Changes to this policy</h2>
+    <p>If what the app does with data changes, we will update this policy and its date at the top, and tell you in the app when the change is significant.</p>
+  </section>
 </article>
 </main>
+<footer>vexmaher · <a href="mailto:vexmaher@proton.me">vexmaher@proton.me</a></footer>
 </body>
 </html>
